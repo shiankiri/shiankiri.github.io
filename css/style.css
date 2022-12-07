@@ -1,0 +1,287 @@
+/**
+* Global Settings
+*/
+* { 
+	padding: 0px; 
+	margin: 0px; 
+	font-family: verdana;
+	font-size: 1em;
+	font-weight: normal;
+	box-sizing: border-box;
+}
+
+/**
+* HTML Tags
+*/
+body {
+	background: #2f2f2f url("bg.jpg") top left no-repeat;
+}
+h1 {
+	font-size: 1.375em;
+}
+a {
+	text-decoration: none;
+	color: #a97800;
+	font-weight: bold;
+}
+a:hover {
+	text-decoration: underline;
+	color: #eeb21e;
+}
+strong {
+	font-weight: bold;
+}
+/************************************************************************************************
+* Custom
+*************************************************************************************************/
+/************************************************************************************************
+* Navigation
+*************************************************************************************************/
+#navigation {
+	background: #34341d url("bg_bar_green.jpg") top left repeat-x;
+	height: 35px;
+	border-top: 1px solid #34341d;
+	border-bottom: 1px solid #34341d;
+	overflow: hidden;
+}
+
+#navigation ul {
+	display:block;
+	overflow: hidden;
+}
+#navigation ul li {
+	display: block;
+	float: left;
+}
+#navigation ul li a {
+	display: block;
+	width: 120px;
+	height: 35px;
+	line-height: 35px;	
+	text-decoration: none; 
+	text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.80);
+	text-align: center;
+	color: #ffffff;
+	font-weight: bold;
+}
+#navigation ul li a:hover {
+	background: #c6ff00;
+}
+.menu_items_container
+{
+	float: left;
+	width: 700px;
+	height: 35px;
+}
+.search_container
+{
+	float: right;
+	width: 300px;
+	height: 35px;
+	padding: 6px 0px 0px 0px;
+}
+.search_container input[type="text"] 
+{
+	width: 180px;
+	border: 1px solid #000000;
+	padding: 2px 4px 2px 4px;
+	margin: 0px 5px 0px 25px;
+}
+.search_container input[type="submit"]
+{
+	border: 1px solid #000000;
+	padding: 2px 4px 2px 4px;
+}
+/************************************************************************************************
+* Wrapper
+*************************************************************************************************/
+.wrapper {
+	box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.80);
+	-moz-box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.80);
+	-webkit-box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.80);
+	
+	width: 90%;
+	margin: 0px auto;
+	margin-top: 50px;
+	overflow: hidden;
+}
+
+#spotlight {
+	background: #f00;
+	background-image: url("background.png");
+	background-repeat: repeat-x;
+	height: 500px;
+}
+/************************************************************************************************
+* Page
+*************************************************************************************************/
+#page .wrapper
+{
+	background: #ffffff;
+	margin-bottom:  50px;
+}
+#page p.copyright
+{
+	border-top: 1px solid #3c3c3c;
+	text-align: center;
+	font-size: 0.625em;
+	margin: 0px 10px 5px 10px;
+	padding: 5px 0px 0px 0px;
+}
+/************************************************************************************************
+* Content
+*************************************************************************************************/
+#content {
+	background: #ffffff;
+	width: 980px;
+	padding: 10px;
+}
+#content .content-block p.time_stamp {
+	font-size: 0.625em;
+	margin: 0px 0px 10px 0px;
+}
+#content .content-block h2 {
+	font-size: 1.375em;
+	font-weight: bold;
+	margin: 0px 0px 0px 0px;
+}
+#content .content-block p {
+	font-size: 0.813em;
+	white-space: pre-wrap;
+	line-height: 20px;
+	/* letter-spacing: 0.167em; */
+}
+#content .content-block {
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 5px 0px;
+}
+#content .content-block .meta-data {
+	overflow: hidden;
+}
+ul.categories {
+	list-style: none;
+	display: block;
+	float: left;
+	height: 16px;
+	background: url("icon_folder.png") top left no-repeat;
+	font-size: 0.625em;
+	padding: 3px 0px 0px 20px;
+	margin: 0px 10px 0px 0px;
+}
+ul.categories li {
+	display: block;
+	float: left;
+	margin: 0px 5px 0px 0px;
+}
+ul.tags {
+	list-style: none;
+	display: block;
+	float: left;
+	height: 16px;
+	background: url("icon_tag.png") top left no-repeat;
+	font-size: 0.625em;
+	padding: 3px 0px 0px 20px;
+}
+ul.tags li {
+	display: block;
+	float: left;
+	margin: 0px 5px 0px 0px;
+}
+/************************************************************************************************
+* Portfolio
+*************************************************************************************************/
+#portfolio {
+	background: #b8b8b8;
+	padding: 40px 40px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	row-gap: 40px;
+}
+#portfolio .content-block h2 {
+	font-size: 1.375em;
+	font-weight: bold;
+	margin: 0px 0px 0px 0px;
+}
+#portfolio .content-block h3 {
+	font-weight: bold;
+}
+#portfolio .content-block h4 {
+	font-size: 0.75em;
+	font-weight: bold;
+}
+#portfolio .content-block p {
+	font-size: 0.813em;
+	line-height: 20px;
+	/* letter-spacing: 0.167em; */
+}
+#portfolio .meta-data {
+	margin: 0px 0px 5px 0px;
+}
+#portfolio .content-block img:first-child {
+	width: 300px;
+}
+#portfolio .content-block a img {
+	border: 5px solid #000000;
+	/* letter-spacing: 0.167em; */
+}
+#portfolio .content-block a:hover img {
+	border: 5px solid #eeb21e;
+}
+#portfolio .content-block img {
+	float: left;
+	margin: 0px 10px 0px 0px;
+}
+#portfolio .content-block {
+	display: block;
+	overflow: hidden;
+	width: 47%;
+	background: #fff;
+	padding: 20px;
+	margin: 0px 0px 5px 0px;
+
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.80);
+	-moz-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.80);
+	-webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.80);
+}
+#portfolio .content-block .info {
+	display: block;
+	overflow: hidden;
+}
+#portfolio .content-block .gallery {
+	display: flex;
+	overflow: hidden;
+	margin: 10px 0px 0px 0px;
+}
+#portfolio .content-block .gallery .img-container {
+	width: 100px;
+	height: 50px;
+	margin: 0px 5px 0px 0px;
+	border: 2px solid #000000;
+	float :left;
+	overflow: hidden;
+}
+#portfolio .content-block .gallery .img-container:hover {
+	border: 2px solid #eeb21e;
+}
+#portfolio .content-block .gallery img {
+	width: 100px;
+}
+#portfolio .content-block .gallery a img {
+	border: none;
+	/* letter-spacing: 0.167em; */
+}
+#portfolio .content-block gallery a:hover img {
+	border: none;
+}
+/************************************************************************************************
+* Footer
+*************************************************************************************************/
+#footer
+{
+	color: #ffffff;
+	background: #000000;
+	height: 300px;
+	margin: 50px 0px 0px 0px;
+}
